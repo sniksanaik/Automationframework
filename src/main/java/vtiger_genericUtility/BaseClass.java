@@ -42,6 +42,8 @@ public void beforeclassconfig(/*String BROWSER*/) throws IOException {
 	String BROWSER=putil.toReadDataFromPropertyFile("browser");
 	String URL=putil.toReadDataFromPropertyFile("url");
 	
+	
+	
 	if(BROWSER.equalsIgnoreCase("chrome")) {
 		driver=new ChromeDriver();
 	}else if(BROWSER.equalsIgnoreCase("edge")) {
