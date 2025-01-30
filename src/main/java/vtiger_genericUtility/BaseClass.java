@@ -32,7 +32,7 @@ public void beforesuitconfig() {
 //@BeforeTest
 //comment 2 line  to do cross browser testing and and uncomment after test
 
-
+//comment 2 line  to do cross browser testing and and uncomment after test
 
 @BeforeClass(groups= {"smoke","Regression"})
             //beforeclassconfig(String BROWSER) ADD String BROWSER
@@ -53,7 +53,7 @@ public void beforeclassconfig(/*String BROWSER*/) throws IOException {
 		}
 	sDriver=driver;
 	wutil.tomaximize(driver);
-	Reporter.log("Browser got login----------", true);
+	Reporter.log("Browser got login----=========================------", true);
 	
 	wutil.toWaitForElement(driver);
 	driver.get(URL);
@@ -80,7 +80,7 @@ public void afteremethodconfig() {
 }
 @AfterClass(groups= {"smoke","Regression"})
 public void afterclassconfig() {
-	Reporter.log("----Browser got closed ----------", true);
+	Reporter.log("----Browser got closed -------============---", true);
 	driver.quit();
 }
 @AfterSuite(groups= {"smoke","Regression"})
